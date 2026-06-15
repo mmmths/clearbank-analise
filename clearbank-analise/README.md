@@ -1,31 +1,33 @@
-# ClearBank - Análise Financeira com Python
+# ClearBank Análise Financeira
 
-Projeto desenvolvido para o desafio final de análise financeira com Python.
+Projeto desenvolvido em Python para leitura, validação e análise de transações bancárias a partir de um arquivo CSV.
 
-O notebook lê um arquivo `transacoes.csv`, valida os registros, descarta linhas inválidas, agrupa as transações por mês, calcula métricas financeiras, sinaliza transações suspeitas acima de R$ 10.000,00 e exporta o resultado em JSON.
+## Objetivo
 
-## Arquivos do projeto
-
-- `desafio-final.ipynb`: notebook principal com a solução.
-- `transacoes.csv`: arquivo de teste com 15 registros válidos e 5 inválidos.
-- `relatorio.json`: arquivo gerado pelo notebook com o resultado da análise.
-- `grafico.png`: gráfico opcional com o saldo mensal.
+O notebook lê o arquivo `transacoes.csv`, valida os dados, remove registros inválidos, calcula métricas financeiras mensais, identifica transações suspeitas e exporta o resultado em JSON.
 
 ## Como executar
 
 1. Abra o arquivo `desafio-final.ipynb` no Google Colab ou Jupyter Notebook.
 2. Execute todas as células em ordem.
-3. Confira a saída formatada do relatório no notebook.
-4. Verifique os arquivos gerados: `relatorio.json` e `grafico.png`.
+3. O notebook irá gerar o relatório no terminal e criar os arquivos de saída.
 
-## O que o notebook faz
+## Arquivo de entrada
 
-- Lê o CSV usando o módulo nativo `csv` e `csv.DictReader`.
-- Trata `FileNotFoundError` caso o CSV não exista.
-- Valida `id`, `cliente_id`, `data`, `tipo` e `valor`.
-- Usa `datetime.strptime` para validar e converter datas.
-- Agrupa as transações por mês no formato `AAAA-MM`.
-- Calcula total de créditos, total de débitos, saldo, média, maior valor e menor valor.
-- Lista transações suspeitas com valor acima de R$ 10.000,00.
-- Exporta o relatório final em `relatorio.json`.
-- Gera o gráfico `grafico.png` com `matplotlib`.
+- `transacoes.csv`
+
+## Arquivos gerados
+
+- `relatorio.json`: relatório final em formato JSON.
+- `grafico.png`: gráfico com o saldo mensal.
+
+## Funcionalidades
+
+- Leitura de CSV com `csv.DictReader`
+- Validação de dados
+- Tratamento de erros com `try/except`
+- Agrupamento mensal
+- Cálculo de crédito, débito, saldo, média, maior e menor valor
+- Identificação de transações suspeitas acima de R$ 10.000,00
+- Exportação em JSON
+- Geração de gráfico com matplotlib
