@@ -1,0 +1,21 @@
+id,data,cliente_id,tipo,valor,descricao,categoria
+1,2026-01-05,CLI001,credito,3500.00,Salário janeiro,salario
+2,2026-01-12,CLI002,debito,180.50,Supermercado,compra
+3,2026-01-20,CLI001,debito,220.15,Farmácia,saude
+4,2026-01-27,CLI004,debito,89.90,Transporte,transporte
+5,2026-02-03,CLI003,credito,15000.00,Transferência suspeita,transferencia
+6,2026-02-08,CLI002,debito,320.00,Conta de luz,conta
+7,2026-02-14,CLI005,debito,890.00,Aluguel,moradia
+8,2026-02-25,CLI001,credito,3500.00,Salário fevereiro,salario
+9,2026-03-01,CLI001,credito,3500.00,Salário março,salario
+10,2026-03-10,CLI003,debito,99.90,Streaming,assinatura
+11,2026-03-17,CLI006,debito,450.00,Compra online,compra
+12,2026-03-29,CLI002,credito,1800.00,Freelance,renda_extra
+13,2026-04-02,CLI004,debito,250.00,Manutenção,servico
+14,2026-04-12,CLI007,credito,12000.00,Bônus anual,bonus
+15,2026-04-20,CLI001,debito,650.00,Curso online,educacao
+16,2026-04-21,,debito,100.00,Sem cliente,transferencia
+ABC,2026-04-22,CLI008,credito,500.00,ID inválido,renda_extra
+17,2026/04/25,CLI009,debito,75.00,Data inválida,compra
+18,2026-04-28,CLI010,saque,300.00,Tipo inválido,outros
+19,2026-04-29,CLI011,credito,abc,Valor inválido,outros
